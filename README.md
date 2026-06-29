@@ -1,1 +1,0 @@
-# simulasi-model-ising-2d

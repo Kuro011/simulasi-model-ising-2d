@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi Model Ising 2D - Fase Feromagnetik</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 20px; background-color: #f4f4f9; color: #333; }
+        .container { max-width: 900px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1, h2 { color: #2c3e50; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        .output-img { display: block; max-width: 100%; height: auto; margin: 20px auto; border: 1px solid #ddd; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .case-box { background-color: #eef2f7; padding: 15px; border-left: 5px solid #3498db; margin: 20px 0; border-radius: 0 4px 4px 0; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulasi Model Ising 2D via Algoritma Metropolis</h1>
+        <p>Tugas Studi Kasus Komprehensif - Eksplorasi Transisi Fasa dan Magnetisasi Spontan.</p>
+
+        <div class="case-box">
+            <h3>Kasus 1: Fase Feromagnetik (Suhu Rendah, T = 1.00)</h3>
+            <p><strong>Kondisi Termodinamika:</strong> Sistem disimulasikan di bawah suhu kritis menggunakan konfigurasi awal acak (Hot Start) dengan ukuran kisi 20x20 sepanjang 200.000 langkah Monte Carlo.</p>
+        </div>
+
+        <h2>Visualisasi Output 2D & Kurva Magnetisasi</h2>
+        <img src="hasil_simulasi_kasus1.png" alt="Output Simulasi Model Ising 2D" class="output-img">
+
+        <h2>Interpretasi Fisis Ilmiah</h2>
+        <ul>
+            <li><strong>Penyelarasan Spontan:</strong> Walaupun sistem diinisialisasi dari keadaan acak total (Hot Start), interaksi pertukaran feromagnetik ($J > 0$) mendominasi jalannya simulasi karena energi eksitasi termal dari lingkungan sangat kecil ($T = 1.0 < T_c$).</li>
+            <li><strong>Pembentukan Domain Homogen:</strong> Keadaan akhir kisi spin secara visual didominasi oleh penyearahan orientasi spin secara spontan untuk meminimalkan energi bebas sistem.</li>
+            <li><strong>Nilai Magnetisasi:</strong> Kurva riwayat magnetisasi rata-rata menunjukkan peningkatan tajam dari menuju nilai mutlak mendekati satu, menandakan keberhasilan sistem dalam mencapai fase kesetimbangan feromagnetik teratur.</li>
+        </ul>
+
+        <h2>Atribusi & Penggunaan Alat</h2>
+        <p>Pada pengerjaan ini, kami menggunakan <strong>Gemini</strong> untuk mendesain struktur optimasi logika kode, serta lingkungan <strong>GitHub Codespaces</strong> sebagai media komputasi awan interaktif.</p>
+    </div>
+</body>
+</html>
